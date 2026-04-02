@@ -1,59 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - mGame</title>
-    <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 20px; background-color: #f4f4f9; }
-        .container { max-width: 800px; margin: auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
-        h2 { color: #2980b9; margin-top: 25px; }
-        p { margin-bottom: 15px; }
-        ul { margin-bottom: 15px; }
-        li { margin-bottom: 8px; }
-        .footer { margin-top: 30px; font-size: 0.9em; color: #777; text-align: center; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - mGAME</title>
+  <style>
+    :root{
+      --bg:#0f1220;
+      --card:#171b2e;
+      --card2:#1d2340;
+      --text:#f4f7ff;
+      --muted:#a8b0d3;
+      --accent:#ff4f9a;
+      --accent2:#7c5cff;
+      --line:rgba(255,255,255,.08);
+      --good:#4be3a1;
+      --warn:#ffcc66;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(124,92,255,.14), transparent 30%),
+        radial-gradient(circle at right, rgba(255,79,154,.10), transparent 25%),
+        linear-gradient(180deg, #0b0e18 0%, var(--bg) 100%);
+      color:var(--text);
+      line-height:1.7;
+    }
+    .wrap{
+      max-width:980px;
+      margin:0 auto;
+      padding:32px 18px 64px;
+    }
+    .hero{
+      background:linear-gradient(135deg, rgba(124,92,255,.18), rgba(255,79,154,.12));
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:24px;
+      padding:28px;
+      box-shadow:0 20px 50px rgba(0,0,0,.28);
+      margin-bottom:20px;
+    }
+    h1{
+      margin:0 0 10px;
+      font-size:clamp(32px, 5vw, 54px);
+      line-height:1.05;
+      letter-spacing:.2px;
+    }
+    .sub{
+      color:var(--muted);
+      margin:0;
+      max-width:72ch;
+    }
+    .meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:18px;
+    }
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:9px 12px;
+      border-radius:999px;
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.08);
+      color:var(--text);
+      font-size:14px;
+    }
+    .pill strong{color:var(--warn)}
+    .grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:14px;
+    }
+    .section{
+      background:rgba(23,27,46,.92);
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:22px 22px 18px;
+      box-shadow:0 12px 30px rgba(0,0,0,.16);
+    }
+    h2{
+      margin:0 0 10px;
+      font-size:22px;
+      color:#fff;
+    }
+    p{margin:0 0 10px; color:var(--text)}
+    ul{
+      margin:10px 0 0 22px;
+      padding:0;
+      color:var(--text);
+    }
+    li{margin:8px 0}
+    .note{
+      color:var(--muted);
+      font-size:14px;
+      margin-top:10px;
+    }
+    .accent{color:var(--good); font-weight:700}
+    .warn{color:var(--warn); font-weight:700}
+    .footer{
+      margin-top:18px;
+      color:var(--muted);
+      font-size:14px;
+      text-align:center;
+    }
+    a{color:#bda7ff}
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Privacy Policy for mGame</h1>
-        <p>Last updated: April 2024</p>
-
-        <p>Welcome to <strong>mGame</strong>. Your privacy is important to us. This policy explains how we collect, use, and protect your information when you use our mobile application.</p>
-
-        <h2>1. Information We Collect</h2>
-        <ul>
-            <li><strong>Personal Info:</strong> Name, email, and profile details provided during registration.</li>
-            <li><strong>Game Data:</strong> Points earned, levels reached (Devil 1, 2, etc.), and play time.</li>
-            <li><strong>Financial Info:</strong> UPI IDs or Bank details provided solely for redeeming points into real money.</li>
-            <li><strong>Device Info:</strong> Device model, OS version, and unique identifiers.</li>
-        </ul>
-
-        <h2>2. How We Use Your Information</h2>
-        <p>We use the collected data to:</p>
-        <ul>
-            <li>Maintain your account and rank on the <strong>Leaderboard</strong>.</li>
-            <li>Process your <strong>Redeem</strong> requests (Bank/UPI/Gift Cards).</li>
-            <li>Calculate <strong>Referral Commissions</strong> for your team.</li>
-            <li>Improve gameplay experience and difficulty levels.</li>
-        </ul>
-
-        <h2>3. Third-Party Services & Ads</h2>
-        <p>mGame uses third-party advertising networks. These services may collect data to show personalized ads. Watching ads allows users to earn extra play time or double their points.</p>
-
-        <h2>4. Data Security</h2>
-        <p>We implement industry-standard security to protect your points and personal info. However, no method of transmission over the internet is 100% secure.</p>
-
-        <h2>5. Your Rights</h2>
-        <p>You can view your history, update personal info, or use the <strong>Delete Account</strong> option in the profile section at any time to remove your data from our system.</p>
-
-        <h2>6. Contact Us</h2>
-        <p>If you have any questions about this Privacy Policy, please contact us through the "Contact Us" section in the app.</p>
-
-        <div class="footer">
-            &copy; 2024 mGame. All rights reserved.
-        </div>
+  <div class="wrap">
+    <div class="hero">
+      <h1>Privacy Policy</h1>
+      <p class="sub">
+        This Privacy Policy explains how mGAME collects, uses, stores, shares, and protects information when you use the App, play games, watch ads, earn points, and request redemptions.
+      </p>
+      <div class="meta">
+        <span class="pill">App Name: <strong>mGAME</strong></span>
+        <span class="pill">Last Updated: <strong>02 Apr 2026</strong></span>
+        <span class="pill">Support: <strong>contact.feedback.store@gmail.com</strong></span>
+      </div>
     </div>
+
+    <div class="grid">
+      <section class="section">
+        <h2>1. Introduction</h2>
+        <p>We respect your privacy and aim to keep collection limited to what is needed to run the App, provide rewards, process redemptions, detect fraud, and improve performance.</p>
+      </section>
+
+      <section class="section">
+      <h2>1A. No Guaranteed Earnings</h2>
+      <p><span class="warn">mGAME does NOT guarantee any earnings, income, or financial return.</span> Rewards and points are promotional in nature and may vary based on gameplay, availability, and system checks.</p>
+    </section>
+
+    <section class="section">
+      <h2>1B. Not a Financial Service</h2>
+      <p>This app is not a banking, investment, lending, or financial service platform. It is purely an entertainment-based gaming application.</p>
+    </section>
+
+    <section class="section">
+      <h2>1C. No Purchase Required</h2>
+      <p>Users are not required to make any purchase or payment to earn points or rewards in this app.</p>
+    </section>
+
+      <section class="section">
+        <h2>2. What this policy covers</h2>
+        <p>This policy covers gameplay, points earning, watch-to-earn ads, redemption requests, sign-in, account management, support, and related in-app services.</p>
+      </section>
+
+      <section class="section">
+        <h2>3. Information you provide</h2>
+        <ul>
+          <li>Account details such as name, username, mobile number, email address, or sign-in identifier.</li>
+          <li>Profile data you choose to add, including avatar, level, or team information.</li>
+          <li>Redemption details such as UPI ID, bank account holder name, bank name, account number, IFSC, or gift card delivery details.</li>
+          <li>Support messages, complaints, and feedback sent to us.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>4. Information collected automatically</h2>
+        <ul>
+          <li>Device and app information such as app version, operating system, language, crash logs, and performance data.</li>
+          <li>Gameplay activity such as points earned, levels, redeemed points, ad bonus events, and suspicious activity signals.</li>
+          <li>Network information such as IP address and general connection data.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>5. No special device permissions</h2>
+        <p><span class="accent">This App is designed to work without requesting camera, microphone, contacts, location, SMS, or storage permissions.</span> If the App changes in the future, we will update this policy and request consent where required.</p>
+      </section>
+
+      <section class="section">
+        <h2>6. Firebase Authentication and database</h2>
+        <p>We use Firebase Authentication to manage sign-in and Firebase database services to store account data, points balance, redemption history, support records, and fraud-prevention logs.</p>
+      </section>
+
+      <section class="section">
+        <h2>7. How we use your information</h2>
+        <ul>
+          <li>To create and manage your account.</li>
+          <li>To track points, rewards, and progress.</li>
+          <li>To process cash, UPI, bank transfer, and gift card redemptions.</li>
+          <li>To show relevant in-app ads and bonus rewards.</li>
+          <li>To detect abuse, cheating, chargebacks, fake accounts, and suspicious redemptions.</li>
+          <li>To answer support requests and enforce our rules.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>8. Legal basis and consent</h2>
+        <p>Where consent is required, we ask for clear and informed consent before processing personal data. You may withdraw consent where applicable by using account settings, deleting your account, or contacting support.</p>
+      </section>
+
+     <section class="section">
+  <h2>9. Ads and rewarded ads</h2>
+  <p>We use <span class="warn">Google AdMob</span> and <span class="warn">Unity Ads</span> to display advertisements, including rewarded ads.</p>
+
+  <ul>
+    <li>Ad partners may collect device identifiers, IP address, and interaction data.</li>
+    <li>Ads may be personalized based on user behavior.</li>
+    <li>Users can manage ad personalization through their Google device settings.</li>
+    <li>Rewarded ads may provide bonus points (such as 2x points) only after successful completion.</li>
+  </ul>
+</section>
+
+      <section class="section">
+        <h2>10. Third-party service providers</h2>
+        <p>We may share limited information with service providers that help us operate the App, such as Firebase, ad networks, payout processors, analytics providers, and customer support tools.</p>
+      </section>
+
+      <section class="section">
+        <h2>11. Redemptions and payout processing</h2>
+        <p>When you request a redemption, we may share the minimum necessary information with payment partners to process UPI, bank transfer, or gift card payouts. Your payout details are used only for redemption processing, verification, compliance, and record keeping.</p>
+      </section>
+
+      <section class="section">
+  <h2>11A. Redemption Disclaimer</h2>
+  <p><span class="warn">All redemption requests are subject to verification and approval.</span> We reserve the right to delay, reject, or cancel any redemption due to incorrect details, system errors, fraud detection, or policy violations.</p>
+</section>
+
+      <section class="section">
+        <h2>12. Fraud prevention and manual review</h2>
+        <p>We may review accounts, points activity, ad activity, and redemption requests for unusual patterns. Suspicious activity may cause a redemption to be delayed, pending, rejected, or reversed while we investigate.</p>
+      </section>
+
+      <section class="section">
+  <h2>12A. Fraud and Abuse Policy</h2>
+  <p>Any attempt to manipulate the system, including fake accounts, bots, emulators, VPN abuse, or ad exploitation, will result in:</p>
+  <ul>
+    <li>Permanent account suspension</li>
+    <li>Forfeiture of all points and rewards</li>
+    <li>Blocking of future redemptions</li>
+  </ul>
+</section>
+
+      <section class="section">
+        <h2>13. Data retention</h2>
+        <p>We keep personal data only for as long as needed to provide the App, complete redemptions, comply with law, settle disputes, prevent abuse, and maintain records. Some logs may be kept longer where required for security or legal reasons.</p>
+      </section>
+
+      <section class="section">
+        <h2>14. Security</h2>
+        <p>We use reasonable technical and organizational safeguards to protect your information. No online system is perfectly secure, so we cannot guarantee absolute security.</p>
+      </section>
+
+      <section class="section">
+        <h2>15. Cross-border processing</h2>
+        <p>Your information may be processed or stored in countries outside your own, including outside India, where permitted by applicable law and where our providers operate secure infrastructure.</p>
+      </section>
+
+      <section class="section">
+        <h2>16. Children’s privacy</h2>
+        <p>The App is intended for users who are eligible to use it under applicable law. We do not knowingly collect data from children in a way that violates law. If you believe a child has created an account, contact us for review and removal.</p>
+      </section>
+
+      <section class="section">
+        <h2>17. Your rights</h2>
+        <ul>
+          <li>Access the information we hold about you.</li>
+          <li>Correct or update inaccurate details.</li>
+          <li>Request deletion of your account and associated personal data, subject to legal retention requirements.</li>
+          <li>Withdraw consent where processing is based on consent.</li>
+          <li>Raise a complaint or grievance with us.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>18. Account deletion</h2>
+        <p>You may delete your account from the profile screen if this option is available in the App. Account deletion may remove access to your points, pending rewards, and redemption history, except where records must be retained by law.</p>
+      </section>
+
+      <section class="section">
+        <h2>19. Communication and support</h2>
+        <p>We may contact you for verification, transaction status, account safety, policy updates, support responses, or important service notices. These messages are part of the service and may be sent through in-app alerts, email, SMS, or WhatsApp where permitted.</p>
+      </section>
+
+      <section class="section">
+        <h2>20. Data access by administrators</h2>
+        <p>Authorized administrators may review profile data, points balance, ad-reward logs, redemption requests, and support history to manage the App, prevent abuse, and enforce rules. Access is limited to business needs.</p>
+      </section>
+
+      <section class="section">
+        <h2>21. Third-party links and services</h2>
+        <p>The App may link to external websites or services such as WhatsApp, payout providers, gift card partners, or support pages. Their privacy practices are governed by their own policies.</p>
+      </section>
+
+      <section class="section">
+        <h2>22. Changes to this policy</h2>
+        <p>We may update this policy from time to time. The updated version will be posted in the App or on our website with a revised date.</p>
+      </section>
+
+      <section class="section">
+        <h2>23. Contact us</h2>
+        <p>If you have questions, complaints, or deletion requests, contact us at <a href="mailto:contact.feedback.store@gmail.com">contact.feedback.store@gmail.com</a>.</p>
+      </section>
+
+      <section class="section">
+  <h2>23A. Limitation of Liability</h2>
+  <p>We are not responsible for any losses, including but not limited to lost rewards, delayed payments, failed transactions, or technical issues beyond our control.</p>
+</section>
+
+<section class="section">
+  <h2>23B. No Guarantee of Availability</h2>
+  <p>We do not guarantee uninterrupted access to the app, rewards, or redemption services. Features may change or be discontinued at any time.</p>
+</section>
+
+      <section class="section">
+        <h2>24. Governing compliance</h2>
+        <p>This policy is intended to work alongside applicable privacy laws and platform requirements, including India-specific rules and any other laws that apply to your use of the App.</p>
+      </section>
+    </div>
+
+    <div class="footer">
+      By using the App, you agree to this Privacy Policy.
+    </div>
+  </div>
 </body>
 </html>
