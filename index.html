@@ -58,17 +58,19 @@
       gap:10px;
       margin-top:18px;
     }
-    .pill{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding:9px 12px;
-      border-radius:999px;
-      background:rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.08);
-      color:var(--text);
-      font-size:14px;
-    }
+    .pill {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 50px;
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,0.08);
+  font-size: 14px;
+  color: var(--muted);
+
+  /* FIX */
+  max-width: 100%;
+  word-break: break-all;
+}
     .pill strong{color:var(--warn)}
     .grid{
       display:grid;
@@ -120,7 +122,7 @@
       <div class="meta">
         <span class="pill">App Name: <strong>mGAME</strong></span>
         <span class="pill">Last Updated: <strong>02 Apr 2026</strong></span>
-        <span class="pill">Support: \n<strong>contact.feedback.store@gmail.com</strong></span>
+        <span class="pill">Support: <strong>contact.feedback.store@gmail.com</strong></span>
       </div>
     </div>
 
@@ -197,19 +199,16 @@
       </section>
 
      <section class="section">
- <section class="section">
-        <h2>9. Ads and Advertising ID</h2>
-        <p>We use <span class="warn">Google AdMob</span> and <span class="warn">Unity Ads</span> to display advertisements, including rewarded ads, which help support the app and provide rewards to users.</p>
-        
-        <ul>
-          <li><strong>Advertising ID:</strong> Our app collects and uses the <strong>Google Advertising ID</strong> (AAID). We and our ad partners use this ID to display personalized ads, measure the effectiveness of ad campaigns, and analyze user interaction.</li>
-          <li><strong>Fraud Prevention:</strong> The Advertising ID is also used to detect and prevent fraudulent activities, such as bot clicks, multiple account abuse, or ad exploitation to earn unfair points.</li>
-          <li><strong>Ad Personalization:</strong> Ad partners may collect device identifiers, IP addresses, and interaction data to show ads based on your interests.</li>
-          <li><strong>User Control:</strong> You can reset your Advertising ID or opt-out of personalized ads at any time through your Android device settings <strong>(Settings > Google > Ads)</strong>.</li>
-          <li><strong>Rewarded Ads:</strong> Bonus points (such as 2x or 3x rewards) are only credited to your account after the full completion of a rewarded video ad.</li>
-        </ul>
-        <p class="note">Note: If you opt-out of personalized ads, you will still see advertisements in the app, but they may be less relevant to your interests.</p>
-      </section>
+  <h2>9. Ads and rewarded ads</h2>
+  <p>We use <span class="warn">Google AdMob</span> and <span class="warn">Unity Ads</span> to display advertisements, including rewarded ads.</p>
+
+  <ul>
+    <li>Ad partners may collect device identifiers, IP address, and interaction data.</li>
+    <li>Ads may be personalized based on user behavior.</li>
+    <li>Users can manage ad personalization through their Google device settings.</li>
+    <li>Rewarded ads may provide bonus points (such as 2x points) only after successful completion.</li>
+  </ul>
+</section>
 
       <section class="section">
         <h2>10. Third-party service providers</h2>
